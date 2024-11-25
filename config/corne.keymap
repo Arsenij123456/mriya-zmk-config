@@ -80,6 +80,11 @@
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <24 25 26>;
         };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
