@@ -75,6 +75,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        languge {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <24 25 26>;
+        };
     };
 
     keymap {
