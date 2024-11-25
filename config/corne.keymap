@@ -53,6 +53,30 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        copu {
+            bindings = <&kp LC(C)>;
+            key-positions = <25 26>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <26 27>;
+        };
+
+        win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <36 37>;
+        };
+
+        eskape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
