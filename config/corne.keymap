@@ -5,8 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
@@ -101,10 +99,10 @@
 
         lower_layer {
             bindings = <
-&kp LEFT_BRACKET  &kp Q         &kp W   &kp E        &kp R                 &kp T          &kp Y                &kp U                     &kp I            &kp O       &kp P                &kp RIGHT_BRACKET
-&mt LCTRL PLUS    &kp A         &kp S   &kp D        &kp F                 &kp G          &kp H                &kp J                     &kp STAR         &kp LPAR    &mt COLON SEMICOLON  &kp MINUS
-&mt LALT EQUAL    &kp NUMBER_1  &kp N2  &kp N3       &kp N4                &kp N5         &kp N6               &kp N7                    &kp N8           &kp PERIOD  &mt QUESTION SLASH   &mt RALT MINUS
-                                        &lt 2 LCTRL  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &mt NUMBER_1 ESCAPE  &mt RIGHT_SHIFT LEFT_WIN  &lt 2 BACKSPACE
+&none           &none  &none  &none        &none                 &none          &none                &none                     &none            &none       &none                &kp RIGHT_BRACKET
+&mt LCTRL PLUS  &none  &none  &none        &none                 &none          &none                &none                     &kp STAR         &kp LPAR    &mt COLON SEMICOLON  &kp MINUS
+&mt LALT EQUAL  &none  &none  &none        &none                 &none          &none                &none                     &none            &kp PERIOD  &mt QUESTION SLASH   &mt RALT MINUS
+                              &lt 2 LCTRL  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &mt NUMBER_1 ESCAPE  &mt RIGHT_SHIFT LEFT_WIN  &lt 2 BACKSPACE
             >;
         };
 
@@ -119,10 +117,10 @@
 
         adjust_layer {
             bindings = <
-&bootloader        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&ext_power EP_OFF  &kp KP_NUM    &none         &none         &none         &none           &none         &none         &none         &none         &none         &ext_power EP_OFF
-                                               &trans        &none         &trans          &trans        &none         &trans
+&none         &kp C_VOLUME_UP  &none  &none      &none           &none        &none       &none         &none          &none  &none  &none
+&kp CAPSLOCK  &kp C_VOL_DN     &none  &none      &none           &none        &none       &none         &none          &none  &none  &none
+&none         &kp K_MUTE       &none  &none      &none           &none        &none       &none         &none          &none  &none  &none
+                                      &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER    &kp ESCAPE  &kp LEFT_WIN  &kp BACKSPACE
             >;
         };
     };
