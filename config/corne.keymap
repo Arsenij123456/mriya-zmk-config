@@ -100,7 +100,7 @@
 
         lower_layer {
             bindings = <
-&none           &none  &none  &kp C_VOLUME_UP  &none                 &none           &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp RIGHT_BRACKET
+&none           &none  &none  &kp C_VOLUME_UP  &none                 &tog 0          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp RIGHT_BRACKET
 &mt LCTRL PLUS  &none  &none  &kp C_VOL_DN     &none                 &tog 3          &bt BT_CLR_ALL  &none         &kp STAR      &kp LPAR      &mt COLON SEMICOLON  &kp MINUS
 &mt LALT EQUAL  &none  &none  &none            &none                 &kp LEFT_WIN    &kp UP          &none         &none         &kp PERIOD    &mt QUESTION SLASH   &mt RALT MINUS
                               &lt 1 LCTRL      &mt LEFT_SHIFT SPACE  &lt 2 ENTER     &kp LEFT        &kp DOWN      &kp RIGHT
@@ -118,10 +118,10 @@
 
         adjust_layer {
             bindings = <
-&none         &kp C_VOLUME_UP        &none  &none      &kp H           &none        &mo 0       &none         &none          &kp K_SCROLL_UP    &none  &none
-&kp CAPSLOCK  &kp LA(C_VOLUME_DOWN)  &none  &none      &none           &none        &none       &none         &none          &none              &none  &none
-&none         &kp K_MUTE             &none  &none      &none           &none        &none       &none         &none          &kp K_SCROLL_DOWN  &none  &none
-                                            &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER    &kp ESCAPE  &kp LEFT_WIN  &kp BACKSPACE
+&tog 0        &kp Q  &kp W  &kp E      &kp R           &kp T        &mo 0       &none         &none          &kp K_SCROLL_UP    &none  &none
+&kp TAB       &kp A  &kp S  &kp D      &kp F           &kp G        &none       &none         &none          &none              &none  &none
+&kp LEFT_ALT  &kp Z  &kp X  &kp C      &kp V           &kp B        &none       &none         &none          &kp K_SCROLL_DOWN  &none  &none
+                            &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &kp ESCAPE  &kp LEFT_WIN  &kp BACKSPACE
             >;
         };
     };
