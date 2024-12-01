@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
@@ -99,10 +100,10 @@
 
         lower_layer {
             bindings = <
-&none           &kp C_VOLUME_UP  &none  &none        &none                 &none          &none     &none     &none      &none       &none                &kp RIGHT_BRACKET
-&mt LCTRL PLUS  &kp C_VOL_DN     &none  &none        &none                 &none          &none     &none     &kp STAR   &kp LPAR    &mt COLON SEMICOLON  &kp MINUS
-&mt LALT EQUAL  &kp C_VOL_DN     &none  &none        &none                 &none          &kp UP    &none     &none      &kp PERIOD  &mt QUESTION SLASH   &mt RALT MINUS
-                                        &lt 1 LCTRL  &mt LEFT_SHIFT SPACE  &lt 2 ENTER    &kp LEFT  &kp DOWN  &kp RIGHT
+&none           &kp C_VOLUME_UP  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 4    &mo 3     &none     &none      &none       &none                &kp RIGHT_BRACKET
+&mt LCTRL PLUS  &kp C_VOL_DN     &bt BT_CLR_ALL  &none         &none                 &none           &none     &none     &kp STAR   &kp LPAR    &mt COLON SEMICOLON  &kp MINUS
+&mt LALT EQUAL  &kp C_VOL_DN     &none           &none         &none                 &none           &kp UP    &none     &none      &kp PERIOD  &mt QUESTION SLASH   &mt RALT MINUS
+                                                 &lt 1 LCTRL   &mt LEFT_SHIFT SPACE  &lt 2 ENTER     &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -117,7 +118,7 @@
 
         adjust_layer {
             bindings = <
-&none         &kp C_VOLUME_UP        &none  &none      &kp H           &none        &none       &none         &none          &kp K_SCROLL_UP    &none  &none
+&none         &kp C_VOLUME_UP        &none  &none      &kp H           &none        &mo 0       &none         &none          &kp K_SCROLL_UP    &none  &none
 &kp CAPSLOCK  &kp LA(C_VOLUME_DOWN)  &none  &none      &none           &none        &none       &none         &none          &none              &none  &none
 &none         &kp K_MUTE             &none  &none      &none           &none        &none       &none         &none          &kp K_SCROLL_DOWN  &none  &none
                                             &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER    &kp ESCAPE  &kp LEFT_WIN  &kp BACKSPACE
