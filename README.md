@@ -1,1 +1,2 @@
-## ZMK Config for the MRIYA Keyboard (for window
+## ZMK Config for the MRIYA Keyboard (for windows)
+
